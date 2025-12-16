@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Employed
+  - Road
+  - Environment
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 4193614117
+    locked: 0
+  - name: Trails
+    uniqueID: 1048115273
+    locked: 0
+  - name: Enemies
+    uniqueID: 4172903199
+    locked: 0
+  - name: Towers
+    uniqueID: 2907330885
+    locked: 0
+  - name: Environments
+    uniqueID: 2591763993
+    locked: 0
+  - name: Tower gun
+    uniqueID: 1604902239
+    locked: 0
+  - name: Health bars
+    uniqueID: 4065229561
+    locked: 0
+  - name: main base
+    uniqueID: 1566644437
+    locked: 0
+  - name: arrow
+    uniqueID: 273248961
+    locked: 0
+  - name: fire trails
+    uniqueID: 2810175093
+    locked: 0
+  - name: Explosions
+    uniqueID: 2701197855
+    locked: 0
+  - name: coins_effects
+    uniqueID: 4155573313
+    locked: 0
+  - name: UI
+    uniqueID: 3888063785
+    locked: 0

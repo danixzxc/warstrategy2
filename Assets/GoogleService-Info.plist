@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDEcEWBkSOMU2qXzbvh8JJsZD3PzJz4xUU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>966910674535</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Hoody.warstrategytwo</string>
+	<key>PROJECT_ID</key>
+	<string>war-strategy-tower-defense-2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>war-strategy-tower-defense-2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:966910674535:ios:526efb81ec6efb9bbf36c2</string>
+</dict>
+</plist>

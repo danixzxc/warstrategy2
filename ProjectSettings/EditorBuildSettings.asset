@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: 3216f06953e915e4ea7647b86fff283b
+  - enabled: 0
+    path: Assets/Scenes/Episode 1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8484bb0e1715d4b20ab5f2f9a2da1cb2
+  - enabled: 0
+    path: Assets/Scenes/Shop.unity
+    guid: e05aafee51b804d4a8f56eeaee68a2b1
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8e0167b47ee9440589afcc80fb52c1b, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 6b821db28058348dc92350c0d523df00, type: 2}
+  m_UseUCBPForAssetBundles: 0

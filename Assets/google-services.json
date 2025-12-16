@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036789719806",
+    "project_id": "time-of-war-tower-defense",
+    "storage_bucket": "time-of-war-tower-defense.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036789719806:android:9c44adebf85893b6493baf",
+        "android_client_info": {
+          "package_name": "victory.fight.tower.war"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh8I9D98NVruwVsDUzrdstte3YovNs69Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

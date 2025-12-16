@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mobile.notifications@2.3.2/Runtime/Runtime.iml" filepath="$PROJECT_DIR$/Library/PackageCache/com.unity.mobile.notifications@2.3.2/Runtime/Runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mobile.notifications@2.3.2/Tests/Tests.iml" filepath="$PROJECT_DIR$/Library/PackageCache/com.unity.mobile.notifications@2.3.2/Tests/Tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/PackageCache/io.appmetrica.analytics@bac19a4581/io.appmetrica.analytics@bac19a4581.iml" filepath="$PROJECT_DIR$/Library/PackageCache/io.appmetrica.analytics@bac19a4581/io.appmetrica.analytics@bac19a4581.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/mobilenotifications.androidlib/mobilenotifications.androidlib.iml" filepath="$PROJECT_DIR$/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/mobilenotifications.androidlib/mobilenotifications.androidlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/unityLibrary.iml" filepath="$PROJECT_DIR$/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/unityLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/warstrategy2.iml" filepath="$PROJECT_DIR$/.idea/warstrategy2.iml" />
+    </modules>
+  </component>
+</project>
