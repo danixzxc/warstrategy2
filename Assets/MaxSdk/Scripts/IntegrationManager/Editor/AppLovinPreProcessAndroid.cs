@@ -23,7 +23,7 @@ namespace AppLovinMax.Scripts.IntegrationManager.Editor
         private const string ElementNameAndroidPackage = "androidPackage";
         private const string AttributeNameSpec = "spec";
         private const string UmpDependencyPackage = "com.google.android.ump:user-messaging-platform:";
-        private const string UmpDependencyVersion = "2.1.0";
+        private const string UmpDependencyVersion = "4.0.0";
 
         public void OnPreprocessBuild(BuildReport report)
         {
@@ -36,13 +36,9 @@ namespace AppLovinMax.Scripts.IntegrationManager.Editor
             // We can only process gradle template file here. If it is not available, we will try again in post build on Unity IDEs newer than 2018_2 (see AppLovinPostProcessGradleProject).
             if (!AppLovinIntegrationManager.GradleTemplateEnabled) return;
 
-#if UNITY_2019_3_OR_NEWER
             // The publisher could be migrating from older Unity versions to 2019_3 or newer.
             // If so, we should delete the plugin from the template. The plugin will be added to the project's application module in the post processing script (AppLovinPostProcessGradleProject).
             RemoveAppLovinQualityServiceOrSafeDkPlugin(AppLovinIntegrationManager.GradleTemplatePath);
-#else
-            AddAppLovinQualityServicePlugin(AppLovinIntegrationManager.GradleTemplatePath);
-#endif
         }
 
         private static void AddGoogleCmpDependencyIfNeeded()

@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "appsflyer-unity-plugin": "https://github.com/AppsFlyerSDK/appsflyer-unity-plugin.git#v6.15.3",
-    "com.google.external-dependency-manager": "1.2.186",
+    "com.google.external-dependency-manager": "1.2.187",
     "com.unity.2d.animation": "10.2.1",
     "com.unity.2d.pixel-perfect": "5.0.3",
     "com.unity.2d.psdimporter": "9.1.0",

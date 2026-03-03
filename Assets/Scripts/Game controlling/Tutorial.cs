@@ -330,7 +330,7 @@ public class Tutorial : GameController
     private int[] speed_modes = new int[] { 1, 2, 3, 4 };
 
     // Индекс текущего ускорения игры.
-    private int speed_mode = 0;
+    private int speed_mode = 2;
 
     // Логика переключения скорости игры.
     private void speed_logic()
