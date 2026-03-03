@@ -57,9 +57,9 @@ public class Tutorial : GameController
         if (PlayerPrefs.GetInt(tutorial_name) == 0)
             LogTutorialStep("02_finish");
         PlayerPrefs.SetInt(tutorial_name, 1);
-        Time.timeScale = 0;
-        speed_mode = 0;
-        speed_text.text = "x1";
+        Time.timeScale = 1;
+        speed_mode = 2;
+        speed_text.text = "x2";
         playerInteractions.enabled = true;
         Destroy(finalPanel);
         Destroy(this);
