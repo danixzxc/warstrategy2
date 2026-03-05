@@ -46,8 +46,9 @@ public class Tutorial : GameController
     [SerializeField] private GameController playerInteractions;
     [SerializeField] private GameObject finalPanel;
     [SerializeField] private Button final_button;
+    [SerializeField] private Text tutorial_in_progress_text;
 
-    [SerializeField]private int tutorial_timer = 0;
+    [SerializeField] private int tutorial_timer = 0;
     [SerializeField] private string tutorial_name = "tutorial_1";
     private int current_tutorial_step = 0;
     private bool waiting = false;
@@ -57,10 +58,11 @@ public class Tutorial : GameController
         if (PlayerPrefs.GetInt(tutorial_name) == 0)
             LogTutorialStep("02_finish");
         PlayerPrefs.SetInt(tutorial_name, 1);
-        Time.timeScale = 1;
-        speed_mode = 2;
-        speed_text.text = "x2";
+        Time.timeScale = 2;
+        //speed_mode = 2;
+       // speed_text.text = "x2";
         playerInteractions.enabled = true;
+        tutorial_in_progress_text.gameObject.SetActive(false);
         Destroy(finalPanel);
         Destroy(this);
     }
@@ -131,33 +133,41 @@ public class Tutorial : GameController
         QualitySettings.vSyncCount = 2;
         Application.targetFrameRate = 30;
 #endif
-        if (true) //testing tutorial
-          //  if (PlayerPrefs.GetInt(tutorial_name) == 0)
+        //if (true) //testing tutorial
+        if (PlayerPrefs.GetInt(tutorial_name) == 0)
         {
             instance = this;
             Time.timeScale = 1;
             buttons_start();
+            speed_up_button.onClick.Invoke();
+            speed_up_button.onClick.RemoveAllListeners();
             load_towers_buttons();
             LogTutorialStep("01_start");
 
             if (Player.instance.translations != null)
             {
-                messages = new string[13];
-                messages[0] = Player.instance.translations[12];
-                messages[1] = Player.instance.translations[13];
-                messages[2] = Player.instance.translations[14];
-                messages[3] = Player.instance.translations[15];
-                messages[4] = Player.instance.translations[16];
-                messages[5] = Player.instance.translations[17];
-                messages[6] = "";
-                messages[7] = Player.instance.translations[18];
-                messages[8] = Player.instance.translations[19];
-                messages[9] = Player.instance.translations[20];
-                messages[10] = Player.instance.translations[47];
-                messages[11] = Player.instance.translations[48];
-                messages[12] = "";
+                messages = new string[14];
+                messages[0] = Player.instance.translations[13];
+                messages[1] = Player.instance.translations[14];
+
+                messages[2] = Player.instance.translations[17];
+                messages[3] = "";
+                messages[4] = Player.instance.translations[19];
+                messages[5] = Player.instance.translations[20];
+
+                messages[6] = Player.instance.translations[15];
+                messages[7] = Player.instance.translations[16];
+                messages[8] = Player.instance.translations[18];
+
+                messages[9] = Player.instance.translations[49];
+                messages[10] = "";
+                messages[11] = Player.instance.translations[47];
+                messages[12] = Player.instance.translations[48];
+                messages[13] = "";
+
+                tutorial_in_progress_text.text = Player.instance.translations[50];
             }
-          
+
         }
         else
         {
@@ -258,7 +268,7 @@ public class Tutorial : GameController
     private void FixedUpdate()
     {
         if (Container.instance.game_loaded && Container.instance.enemies_loaded) tutorial_timer++;
-        if (tutorial_timer >= intervals[current_tutorial_step] && WavesLogic.instance.current_wave == actions_waves[current_tutorial_step])
+        if (tutorial_timer >= intervals[current_tutorial_step])// && WavesLogic.instance.current_wave == actions_waves[current_tutorial_step])
         {
             start_waiting_player();
         }
@@ -330,20 +340,17 @@ public class Tutorial : GameController
     private int[] speed_modes = new int[] { 1, 2, 3, 4 };
 
     // Индекс текущего ускорения игры.
-    private int speed_mode = 2;
+    private int speed_mode = 0;
 
     // Логика переключения скорости игры.
     private void speed_logic()
     {
-        if (check_action("speed"))
-        {
-            speed_mode++;
-            speed_mode %= speed_modes.Length;
-            Time.timeScale = speed_modes[speed_mode];
-            speed_text.text = "x" + speed_modes[speed_mode];
-            button_pressed_in_this_frame = true;
-            //   gameAuido.set_speed(speed_modes[speed_mode]);
-        }
+        speed_mode++;
+        speed_mode %= speed_modes.Length;
+        Time.timeScale = speed_modes[speed_mode];
+        speed_text.text = "x" + speed_modes[speed_mode];
+        button_pressed_in_this_frame = true;
+        //   gameAuido.set_speed(speed_modes[speed_mode]);
     }
 
     // Задает кнопкам нужные функции.
@@ -485,6 +492,6 @@ public class Tutorial : GameController
 
     public override void nextWave()
     {
-        tutorial_timer = 0;
+        //tutorial_timer = 0;
     }
 }

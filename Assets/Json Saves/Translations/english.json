@@ -12,7 +12,7 @@
         "500,000 units of game currency",
         "1,000,000 units of game currency",
         "3,000,000 units of game currency",
-        "To speed up, press the button.",
+        "Continue",
         "Place the tower.",
         "Choose a machine gun.",
         "Destroy objects and get coins.",
@@ -46,8 +46,10 @@
         "Get additional rewards after each level.",
         "Level",
         "Episode 4",
-      "Episode 5",
-      "Machine gun is not enough, we need to build a cannon",
-      "Choose a cannon"
+        "Episode 5",
+        "Machine gun is not enough, we need to build a cannon",
+        "Choose a cannon",
+        "We can also use a mine to destroy enemies.",
+        "TUTORIAL IN PROGRESS"
     ]
 }
